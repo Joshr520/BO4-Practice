@@ -1,0 +1,166 @@
+{
+    "name": "BO4 Practice",
+    "data": [
+        {
+            "type": "hashes",
+            "path": "hashes.txt",
+            "format": "serious_compiler",
+            "ignore_error": true
+        },
+        {
+            "type": "scriptparsetree",
+            "name": "scripts/zm_common/bo4_practice.gsc",
+            "path": "GSC/compiled.gsic",
+            "hooks": [
+                "scripts/zm_common/load.gsc"
+            ]
+        },
+        {
+            "type": "scriptparsetree",
+            "name": "scripts/zm_common/bo4_practice.csc",
+            "path": "CSC/compiled.gscc",
+            "hooks": [
+                "scripts/zm_common/load.csc"
+            ]
+        },
+        {
+            "type": "luafile",
+            "name": "ui/shield/HudHook",
+            "path": "ui/shield/HudHook.luac",
+            "hooks_pre": [
+                "x64:2b23cf5ef446c848"
+            ]
+        },
+        {
+            "type": "hashes",
+            "path": "CSC/hashes.txt",
+            "format": "serious_compiler",
+            "ignore_error": true
+        },
+        {
+            "type": "hashes",
+            "path": "GSC/hashes.txt",
+            "format": "serious_compiler",
+            "ignore_error": true
+        },
+        {
+            "type": "hashes",
+            "path": "strings.txt",
+            "format": "string",
+            "ignore_error": true
+        },
+        {
+            "type": "stringtable",
+            "name": "gamedata/shield/custom_errors.csv",
+            "path": "errors.tsv",
+            "separator": "\t"
+        }
+    ],
+    "cache": [
+        {
+            "type": "eventstring",
+            "name": "zombie_counter",
+            "mode": [
+                "zm"
+            ]
+        },
+        {
+            "type": "eventstring",
+            "name": "mini_boss_health_toggle",
+            "mode": [
+                "zm"
+            ]
+        },
+        {
+            "type": "eventstring",
+            "name": "mini_boss_health_update",
+            "mode": [
+                "zm"
+            ]
+        },
+        {
+            "type": "eventstring",
+            "name": "boss_health_toggle",
+            "mode": [
+                "zm"
+            ]
+        },
+        {
+            "type": "eventstring",
+            "name": "boss_health_update",
+            "mode": [
+                "zm"
+            ]
+        },
+        {
+            "type": "eventstring",
+            "name": "start_settings",
+            "mode": [
+                "zm"
+            ]
+        },
+        {
+            "type": "eventstring",
+            "name": "points",
+            "mode": [
+                "zm"
+            ]
+        },
+        {
+            "type": "eventstring",
+            "name": "specialist_level",
+            "mode": [
+                "zm"
+            ]
+        },
+        {
+            "type": "eventstring",
+            "name": "fast_restart",
+            "mode": [
+                "zm"
+            ]
+        },
+        {
+            "type": "eventstring",
+            "name": "noclip_toggle",
+            "mode": [
+                "zm"
+            ]
+        },
+        {
+            "type": "eventstring",
+            "name": "camera_set_position",
+            "mode": [
+                "zm"
+            ]
+        },
+        {
+            "type": "eventstring",
+            "name": "camera_toggle",
+            "mode": [
+                "zm"
+            ]
+        },
+        {
+            "type": "eventstring",
+            "name": "godmode",
+            "mode": [
+                "zm"
+            ]
+        },
+        {
+            "type": "eventstring",
+            "name": "infinite_ammo",
+            "mode": [
+                "zm"
+            ]
+        },
+        {
+            "type": "menu",
+            "name": "ClientToServer",
+            "mode": [
+                "zm"
+            ]
+        }
+    ]
+}
