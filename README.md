@@ -9,7 +9,7 @@ A speedrunning practice mod for Black Ops 4 using the Shield client - https://gi
 You should be all set and can launch the game from Battle.net now.
 
 # Settings Guide
-**All settings get refreshed on every map restart!**
+**All settings get refreshed on every level restart!**
 ## Server Settings Overview
 - Located in **project-bo4/saved/server**. Game settings that get executed on the host. These settings dictate what happens for non-player specific events.  
 - While server settings aren't player dependent, if the server settings aren't enabled, then no client settings will be loaded.
@@ -51,8 +51,8 @@ For the following description of the settings files, the key will be listed on t
 ### bo4_practice.json
 The general settings file for enabling map specific settings  
 - "enabled": <true | false>, Used to enable/disable the practice patch.
-- "map": "map_name", Used to set which map the practice patch should apply to. See the [Map Codenames](#map-codenames) for a list of map codenames.
-- "patch": "patch_name", Enter the patch name for the map you want. Example patch names are in the json file and in the [Map Patches](#map-patches) section above.
+- "map": "<map_name>", Used to set which map the practice patch should apply to. See the [Map Codenames](#map-codenames) for a list of map codenames.
+- "patch": "<patch_name>", Enter the patch name for the map you want. Example patch names are in the json file and in the [Map Patches](#map-patches) section above.
 - "timer": <true | false>, Enables the gauntlet timer on the top right of the screen. Time starts when the hud appears and will sync to the appropriate starting point when doing practice patches.
 - "zombie_counter": <true | false>, Enables a zombie counter in the top right of the screen.
 - "maps": [<map_list>], Lists all the currently supported maps.
