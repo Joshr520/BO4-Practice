@@ -97,14 +97,14 @@ zm_mansion_get_pap_vamps()
 {
     settings = level.patch_settings.settings.zm_mansion.pap.vamp_lockdown;
     a_vamps = [];
-    if (settings.cemetary) {
-        a_vamps[a_vamps.size] = "cemetary";
+    if (settings.cemetery) {
+        a_vamps[a_vamps.size] = "cemetery";
     }
     if (settings.greenhouse) {
         a_vamps[a_vamps.size] = "garden";
     }
     if (!a_vamps.size) {
-        a_vamps = array("cemetary", "garden");
+        a_vamps = array("cemetery", "garden");
     }
     self.str_hint = array::random(a_vamps);
 }
