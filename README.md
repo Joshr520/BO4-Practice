@@ -47,62 +47,82 @@ The settings file use the JSON file type to store data. The following examples w
   - boss: Start the game in the boss fight.
 
 ## Server Files
-For the following description of the settings files, the key will be listed on the left with the possible options for the value on the right. A brief description of what the setting does is followed with a comma.
+For the following description of the settings files, the key will be listed on the left with the possible options for the value on the right. A brief description of what the setting does is followed after the |.
 ### bo4_practice.json
 The general settings file for enabling map specific settings  
-- "enabled": <true | false>, Used to enable/disable the practice patch.
-- "map": "<map_name>", Used to set which map the practice patch should apply to. See the [Map Codenames](#map-codenames) for a list of map codenames.
-- "patch": "<patch_name>", Enter the patch name for the map you want. Example patch names are in the json file and in the [Map Patches](#map-patches) section above.
-- "timer": <true | false>, Enables the gauntlet timer on the top right of the screen. Time starts when the hud appears and will sync to the appropriate starting point when doing practice patches.
-- "zombie_counter": <true | false>, Enables a zombie counter in the top right of the screen.
-- "maps": [<map_list>], Lists all the currently supported maps.
-- "map_name_patches": [<patch_list>], Lists the currently supported patches for the specified map.
+- "enabled": <true | false>, | Used to enable/disable the practice patch.
+- "map": "<map_name>", | Used to set which map the practice patch should apply to. See the [Map Codenames](#map-codenames) for a list of map codenames.
+- "patch": "<patch_name>", | Enter the patch name for the map you want. Example patch names are in the json file and in the [Map Patches](#map-patches) section above.
+- "timer": <true | false>, | Enables the gauntlet timer on the top right of the screen. Time starts when the hud appears and will sync to the appropriate starting point when doing practice patches.
+- "zombie_counter": <true | false>, | Enables a zombie counter in the top right of the screen.
+- "maps": [<map_list>], | Lists all the currently supported maps.
+- "map_name_patches": [<patch_list>], | Lists the currently supported patches for the specified map.
 - "settings": {  
       "zm_mansion": {  
           "pap": {  
               "ghosts": {  
-                  "essex": <true | false>, Enable/disable specified ghost.  
-                  "shield": <true | false>, Enable/disable specified ghost.  
-                  "strife": <true | false>, Enable/disable specified ghost.  
-                  "scratches": <true | false>, Enable/disable specified ghost.  
-                  "doll": <true | false>, Enable/disable specified ghost.  
-                  "noose": <true | false>, Enable/disable specified ghost.  
-                  "will": <true | false>, Enable/disable specified ghost.  
+                  "essex": <true | false>, | Enable/disable specified ghost.  
+                  "shield": <true | false>, | Enable/disable specified ghost.  
+                  "strife": <true | false>, | Enable/disable specified ghost.  
+                  "scratches": <true | false>, | Enable/disable specified ghost.  
+                  "doll": <true | false>, | Enable/disable specified ghost.  
+                  "noose": <true | false>, | Enable/disable specified ghost.  
+                  "will": <true | false> | Enable/disable specified ghost.  
               },  
               "clocks": {  
-                  "billiards": <true | false>, Enable/disable specified clock.  
-                  "dining": <true | false>, Enable/disable specified clock.  
-                  "main": <true | false>, Enable/disable specified clock.  
+                  "billiards": <true | false>, | Enable/disable specified clock.  
+                  "dining": <true | false>, | Enable/disable specified clock.  
+                  "main": <true | false> | Enable/disable specified clock.  
               },  
               "vamp_lockdown": {  
-                  "cemetary": <true | false>, Enable/disable specified vamp lockdown.  
-                  "greenhouse": <true | false>, Enable/disable specified vamp lockdown.  
+                  "cemetary": <true | false>, | Enable/disable specified vamp lockdown.  
+                  "greenhouse": <true | false> | Enable/disable specified vamp lockdown.  
               }  
           },  
           "ww_quest": {  
               "dig": {  
-                  "close": <true | false>, Enable/disable the specified dig location  
-                  "mid": <true | false>, Enable/disable the specified dig location  
-                  "far": <true | false>, Enable/disable the specified dig location  
+                  "close": <true | false>, | Enable/disable the specified dig location  
+                  "mid": <true | false>, | Enable/disable the specified dig location  
+                  "far": <true | false> | Enable/disable the specified dig location  
               }  
           },  
           "lockdowns": {  
               "scratches": {  
-                  "dining": <true | false>, Enable/disable the specified scratch symbol location  
-                  "library": <true | false>, Enable/disable the specified scratch symbol location  
-                  "danu": <true | false>, Enable/disable the specified scratch symbol location  
-                  "master": <true | false>, Enable/disable the specified scratch symbol location  
-                  "cellar": <true | false>, Enable/disable the specified scratch symbol location  
-                  "main": <true | false>, Enable/disable the specified scratch symbol location  
-                  "billiards": <true | false>, Enable/disable the specified scratch symbol location  
+                  "dining": <true | false>, | Enable/disable the specified scratch symbol location  
+                  "library": <true | false>, | Enable/disable the specified scratch symbol location  
+                  "danu": <true | false>, | Enable/disable the specified scratch symbol location  
+                  "master": <true | false>, | Enable/disable the specified scratch symbol location  
+                  "cellar": <true | false>, | Enable/disable the specified scratch symbol location  
+                  "main": <true | false>, | Enable/disable the specified scratch symbol location  
+                  "billiards": <true | false> | Enable/disable the specified scratch symbol location  
               },  
               "ghosts": {  
-                  "danu": <true | false>, Enable/disable the specified wicker ghost location  
-                  "cellar": <true | false>, Enable/disable the specified wicker ghost location  
-                  "master": <true | false>, Enable/disable the specified wicker ghost location  
+                  "danu": <true | false>, | Enable/disable the specified wicker ghost location  
+                  "cellar": <true | false>, | Enable/disable the specified wicker ghost location  
+                  "master": <true | false> | Enable/disable the specified wicker ghost location  
               },  
-              "enemy_markers": <true | false>, Enable/disable waypoints that follow enemies required to die for lockdowns to progress  
+              "enemy_markers": <true | false> | Enable/disable waypoints that follow enemies required to die for lockdowns to progress  
           },  
-          "boss_health_scaling": <0 | 1 | 2 | 3 | 4>, Override the boss health to scale with the specified player count. 0 means it acts as normal.  
+          "boss_health_scaling": <0 | 1 | 2 | 3 | 4> | Override the boss health to scale with the specified player count. 0 means it acts as normal.  
+      }  
+  }
+
+### box_settings.json
+Weapon codenames are listen in the json. There are too many to neatly list here.  
+- "enabled": <true | false>, | Used to enable/disable the box patch. Will not be enabled if the practice patch overall is disabled.  
+- "settings": {  
+      "weapon_order": [  
+          "<weapon_name_1>", "<weapon_name_2>", "<...>", | List of weapons, in order, that the box will choose. No weapons repeat.  
+      ],  
+      "player_overrides": { | Player specific overrides for the box where the weapons listed below are given to that player instead of the weapons list above. If no weapons are listed, the weapons are still chosen from the list above.  
+          "player_[1-4]": { | Player slots 1-4 as shown in the pregame lobby. 1 is the far left character and 4 is the far right character.  
+              "player_name": "<player_name>", | You can enter a player name to identify the player by instead of relying on the character slot. This is just the players in game name, and caps do not matter. Conflicts may occur if multiple people have the same name.  
+              "weapon_order": [  
+                  "<weapon_name_1>", "<weapon_name_2>", "<...>" | List of weapons, in order, that the box will choose. No weapons repeat.  
+              ]  
+          }  
       }  
   }  
+- "common_weapons": | Lists the names of the weapons on every map.
+- "equipment": | Lists equipment for all maps. You are expected to know which equipment are on which map.
+- "map_name_weapons": | Lists the name of all weapons specific to the specified map
