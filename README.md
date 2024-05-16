@@ -126,3 +126,27 @@ Weapon codenames are listen in the json. There are too many to neatly list here.
 - "common_weapons": | Lists the names of the weapons on every map.
 - "equipment": | Lists equipment for all maps. You are expected to know which equipment are on which map.
 - "map_name_weapons": | Lists the name of all weapons specific to the specified map
+
+## Client Files
+### bo4_practice.json
+The settings file for general player specific settings and keybinds.
+- "start_settings": {  
+      "points": <0-4000000>, | How many points you want to start with. Points cap at 4 million.  
+      "specialist_level": <0-3>, | The starting level you want your specialist to be. Acts as the specialist level talismans.  
+      "godmode": <true | false>, | Choose whether to start with godmode enabled.  
+      "infinite_ammo": <true | false>, | Choose whether to start with infinite ammo enabled.  
+      "perkaholic": <true | false>, | Choose whether to start with a perkaholic active. This will override the perk settings below.  
+      "perkslot_1": <true | false>, | Choose whether to start with the 1st perk active.  
+      "perkslot_2": <true | false>, | Choose whether to start with the 2nd perk active.  
+      "perkslot_3": <true | false>, | Choose whether to start with the 3rd perk active.  
+      "perkslot_4": <true | false> | Choose whether to start with the 4th perk active.  
+  }  
+- "keybinds": {  
+      "valid_keys": [<keys_list>], | A list of valid keys you can enter for the keybinds below. DO NOT EDIT THIS LIST.  
+      "fast_restart": "<key_name>", | The key to quickly restart the map.  
+      "noclip_toggle": "<key_name>", | The key to toggle noclip.  
+      "camera_set_position": "<key_name>", | The key to update the extra camera position.  
+      "camera_toggle": "<key_name>", | The key to toggle the extra camera.  
+      "godmode": "<key_name>", | The key to toggle godmode.  
+      "infinite_ammo": "<key_name>" | The key to toggle infinite ammo.  
+  }
